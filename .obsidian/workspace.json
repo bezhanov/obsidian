@@ -13,28 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QA-Engineer/Charles.md",
+                "file": "QA-Engineer/Вопросы QA/Общие вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Charles"
-            }
-          }
-        ]
-      },
-      {
-        "id": "318fc6f10b3b34c6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5e3035ee46fdc8d1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "title": "Общие вопросы"
             }
           }
         ]
@@ -186,16 +170,39 @@
   },
   "active": "101a68a476c3f847",
   "lastOpenFiles": [
-    "BUGS.md",
-    "TESTCASES.md",
-    "README.md",
-    "task_1/BUGS.md",
+    "QA-Engineer/Вопросы QA/Сервер вернул код 500.md",
+    "QA-Engineer/Вопросы QA/Общие вопросы.md",
+    "QA-Engineer/Backend/Коды запросов gRPC.md",
+    "QA-Engineer/CICD/Вопросы по CI CD.md",
+    "QA-Engineer/Backend/SSL и TLS.md",
+    "QA-Engineer/CICD/Docker",
+    "QA-Engineer/CICD",
+    "QA-Engineer/Git/Откат коммита.md",
+    "QA-Engineer/Git/Основные команды.md",
+    "QA-Engineer/Автоматизированное тестирование/Смоук, регрессионное, интеграционное тестирование.md",
+    "QA-Engineer/Автоматизированное тестирование/Flacky Автотесты.md",
+    "QA-Engineer/Нагрузочное тестирование/Теория НГ.md",
+    "QA-Engineer/Полезные ссылки/JMeter.md",
+    "QA-Engineer/Python/Pytest основные команды.md",
+    "QA-Engineer/Полезные ссылки/Автотесты.md",
+    "QA-Engineer/Полезные ссылки/Pytest.md",
+    "QA-Engineer/Полезные ссылки",
+    "QA-Engineer/Backend/API.md",
+    "QA-Engineer/Тестовая документация/Чек-лист.md",
+    "QA-Engineer/Тестовая документация/Тест-план.md",
+    "QA-Engineer/Тестовая документация/Тест-кейс.md",
+    "QA-Engineer/Тестовая документация/Баг-репорт (в процессе).md",
+    "QA-Engineer/Тестирование БД.md",
+    "QA-Engineer/Тестирование безопасности.md",
+    "QA-Engineer/Charles.md",
+    "QA-Engineer/Требования для QA.md",
+    "QA-Engineer/Python/Итераторы и генераторы.md",
+    "QA-Engineer/Резюме.md",
+    "QA-Engineer/Python/1 Основы/PEP8.md",
     "Files/Pasted image 20240213184507.png",
     "Files/Pasted image 20240104205235.png",
     "Files/Pasted image 20240104203936.png",
     "Files/Pasted image 20240104203914.png",
-    "Files/Pasted image 20240104201955.png",
-    "ФИНАМ/Улучшения.md",
-    "Добро пожаловать.md"
+    "Files/Pasted image 20240104201955.png"
   ]
 }
