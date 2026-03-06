@@ -4,39 +4,51 @@
 
 Обычные методы — это методы, которые принимают в качестве первого аргумента ссылку на экземпляр класса (обычно называемую `self`). Они могут получать доступ и изменять состояние конкретного экземпляра класса, на котором вызываются.
 
-python
-
-Копировать код
-
-`class MyClass:     def instance_method(self):         print(f'Вызван обычный метод экземпляра {self}')`
+```python
+class MyClass:     
+	def instance_method(self):         
+		print(f'Вызван обычный метод экземпляра {self}')
+```
 
 Пример использования:
 
-python
-
-Копировать код
-
-`obj = MyClass() obj.instance_method()  # Вызван обычный метод экземпляра <__main__.MyClass object at 0x...>`
+```python
+obj = MyClass() obj.instance_method()  # Вызван обычный метод экземпляра <__main__.MyClass object at 0x...>
+```
 
 ### 2. Статические методы (Static Methods)
 
 Статические методы не получают автоматический доступ ни к экземпляру класса (`self`), ни к самому классу (`cls`). Они функционируют как обычные функции, но принадлежат пространству имен класса и могут быть вызваны как через сам класс, так и через его экземпляры. Для создания статического метода используется декоратор `@staticmethod`.
 
-python
-
-Копировать код
-
-`class MyClass:     @staticmethod     def static_method():         print('Вызван статический метод')  MyClass.static_method()  # Вызван статический метод obj = MyClass() obj.static_method()      # Вызван статический метод`
+```python
+class MyClass:     
+	@staticmethod     
+	def static_method():         
+		print('Вызван статический метод')  
+		
+MyClass.static_method()  # Вызван статический метод 
+obj = MyClass() 
+obj.static_method()      # Вызван статический метод
+```
 
 ### 3. Методы класса (Class Methods)
 
 Методы класса получают ссылку на сам класс как первый аргумент (обычно называется `cls`). Это позволяет им изменять состояние класса, а не конкретного экземпляра. Для создания метода класса используется декоратор `@classmethod`.
 
-python
+```python
+class MyClass:     
+	class_var = 0      
+	
+	@classmethod     
+	def class_method(cls):         
+		cls.class_var += 1         
+		print(f'Вызван метод класса, class_var = {cls.class_var}')  
+		
 
-Копировать код
-
-`class MyClass:     class_var = 0      @classmethod     def class_method(cls):         cls.class_var += 1         print(f'Вызван метод класса, class_var = {cls.class_var}')  MyClass.class_method()  # Вызван метод класса, class_var = 1 obj = MyClass() obj.class_method()      # Вызван метод класса, class_var = 2`
+MyClass.class_method()  # Вызван метод класса, class_var = 1 
+obj = MyClass() 
+obj.class_method()      # Вызван метод класса, class_var = 2
+```
 
 ### Основные различия:
 

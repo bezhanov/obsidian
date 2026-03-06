@@ -4,11 +4,9 @@
 
 **List comprehension** позволяет создавать новый список, применяя выражение к каждому элементу существимого итерабельного объекта (например, списка или диапазона). Синтаксис выглядит следующим образом:
 
-python
-
-Копировать код
-
-`[expression for item in iterable if condition]`
+```python
+[ expression for item in iterable if condition ]
+```
 
 - **expression** — выражение, которое будет применяться к каждому элементу.
 - **item** — текущий элемент из итерабельного объекта.
@@ -17,9 +15,9 @@ python
 
 **Пример:**
 
-```
+```python
 # Создание списка квадратов чисел от 0 до 9 
-squares = [x**2 for x in range(10)] 
+squares = [ x**2 for x in range(10)] 
 # Результат: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
@@ -27,13 +25,15 @@ squares = [x**2 for x in range(10)]
 
 **Set comprehension** похож на list comprehension, но результатом является множество, которое автоматически удаляет дубликаты. Синтаксис такой же:
 
-`{expression for item in iterable if condition}`
+```python
+{expression for item in iterable if condition}
+```
 
 **Пример:**
 
-```
+```python
 # Создание множества квадратов чисел от 0 до 9 
-squares_set = {x**2 for x in range(10)} 
+squares_set = { x ** 2 for x in range(10)} 
 # Результат: {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
 ```
 
@@ -41,7 +41,9 @@ squares_set = {x**2 for x in range(10)}
 
 **Dict comprehension** позволяет создавать новый словарь, используя выражение и пары ключ-значение. Синтаксис следующий:
 
-`{key_expression: value_expression for item in iterable if condition}`
+```python
+{ key_expression: value_expression for item in iterable if condition }
+```
 
 - **key_expression** — выражение для ключа.
 - **value_expression** — выражение для значения.
@@ -51,7 +53,7 @@ squares_set = {x**2 for x in range(10)}
 
 **Пример:**
 
-```
+```python
 # Создание словаря, где ключи — числа от 0 до 9, а значения — их квадраты 
 squares_dict = {x: x**2 for x in range(10)} 
 # Результат: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
@@ -61,4 +63,6 @@ squares_dict = {x: x**2 for x in range(10)}
 
 Так же можно указывать условия:
 
-`l = [i for i in range(5) if i % 2 == 0]`
+```python
+l = [i for i in range(5) if i % 2 == 0]
+```
